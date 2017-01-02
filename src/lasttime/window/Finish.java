@@ -1,0 +1,37 @@
+package lasttime.window;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+
+import lasttime.window.gfx.Texture;
+
+public class Finish {
+	
+	public Rectangle playButton = new Rectangle(Game.WIDTH/2+120,150,140,50);
+	public Rectangle play2pButton = new Rectangle(Game.WIDTH/2+120,250,190,50);
+	public Rectangle quitButton = new Rectangle(Game.WIDTH/2+120,350,100,50);
+	Texture tex = Game.getInstance();
+public void render(Graphics g)
+{
+	Graphics2D g2d = (Graphics2D) g;
+	Font fnt0= new Font("arial",Font.BOLD,050);
+	g.setFont(fnt0);
+	g.drawImage(tex.spl, 0, 0, null);
+	g.setColor(Color.GRAY);
+	g.drawString("Try Again", Game.WIDTH/2-100, 0100);
+	
+	Font fnt1= new Font("arial",Font.BOLD,030);
+	g.setFont(fnt1);
+	g.drawString("Yes",playButton.x+19,playButton.y+30);
+	g2d.draw(playButton);
+	g.drawString("No",play2pButton.x+19,play2pButton.y+30);
+	g2d.draw(play2pButton);
+	//g.drawString("Quit",quitButton.x+19,quitButton.y+30);
+	//g2d.draw(quitButton);
+	
+}
+}
