@@ -1,3 +1,6 @@
+# How to run
+This is a java project made using Eclipse IDE so to run this import these files as project in 'Eclipse' or quivalent and run it from there.
+
 # DefinitelyNotContra
 A single/multiplayer shooting game
 Made using Java(AWT)
